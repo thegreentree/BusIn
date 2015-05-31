@@ -6,9 +6,7 @@ import traceback
 from DataTransform import *
 from datapack import *
 
-# class Server(ThreadingMixIn,UDPServer):pass
 class Server(ThreadingMixIn,TCPServer):
-    pass
 class Handler(StreamRequestHandler):
     # 复写父类handle方法
     def handle(self):
